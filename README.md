@@ -17,8 +17,9 @@
 
 >	* `vagrant suspend` выключит виртуальную машину с сохранением ее состояния (т.е., при следующем `vagrant up` будут запущены все процессы внутри, которые >работали на момент вызова suspend), `vagrant halt` выключит виртуальную машину штатным образом.
 
-![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_8.png "Suspended")
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_9.png "Suspended")
+
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_8.png "Suspended")
 
 >2. Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей >выделены. Какие ресурсы выделены по-умолчанию?
 
