@@ -18,14 +18,12 @@
 >	* `vagrant suspend` выключит виртуальную машину с сохранением ее состояния (т.е., при следующем `vagrant up` будут запущены все процессы внутри, которые >работали на момент вызова suspend), `vagrant halt` выключит виртуальную машину штатным образом.
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_8.png "Suspended")
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_9.png "Suspended")
 
 >2. Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей >выделены. Какие ресурсы выделены по-умолчанию?
 
 **ВМ по-умолчанию создалась с 2Гб памяти, 2 ядрами ЦПУ, и диском 64Гб (тонкий, реальный размер пока 1,89Гб).**
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_10.png "Ресурсы")
-![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_14.png "Ресурсы")
-
-![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_9.png "Suspended")
 
 >3. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: [документация](https://www.vagrantup.com/docs/providers/virtualbox/configuration.html). Как >добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
@@ -40,6 +38,7 @@
   ```
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_11.png "Конфиг")
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_14.png "Ресурсы")
 
 >4. Команда `vagrant ssh` из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. >Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
 
