@@ -28,7 +28,7 @@
 
 3. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: [документация](https://www.vagrantup.com/docs/providers/virtualbox/configuration.html). Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
-**Чтобы изменить настройки ВМ нужно отредактировать файл Vagrantfile и добавить, например, такие строки, чтобы переименовать ВМ и выдать 4 ЦПУ и 4Гб памяти:
+**Чтобы изменить настройки ВМ нужно отредактировать файл Vagrantfile и добавить, например, такие строки, чтобы переименовать ВМ и выдать 4 ЦПУ и 4Гб памяти:**
 
  ``` config.vm.provider "virtualbox" do |vb|
     vb.name = "Julls_VM"
@@ -40,6 +40,9 @@
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_11.png "Конфиг")
 
 4. Команда `vagrant ssh` из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
+
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_12.png "Команды")
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_13.png "Команды")
 
 5. Ознакомьтесь с разделами `man bash`, почитайте о настройках самого bash:
     * какой переменной можно задать длину журнала `history`, и на какой строчке manual это описывается?
