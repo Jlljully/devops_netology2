@@ -25,6 +25,7 @@
 
 **ВМ по-умолчанию создалась с 2Гб памяти, 2 ядрами ЦПУ, и диском 64Гб (тонкий, реальный размер пока 1,89Гб).**
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_10.png "Ресурсы")
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_14.png "Ресурсы")
 
 3. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: [документация](https://www.vagrantup.com/docs/providers/virtualbox/configuration.html). Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
