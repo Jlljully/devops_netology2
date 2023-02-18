@@ -50,7 +50,7 @@
  >   * какой переменной можно задать длину журнала `history`, и на какой строчке manual это описывается?
 
 **У меня показал 846 строку, HISTFILESIZE, если я правильно поняла вопрос**
-![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_15.png "Переменные")
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_16.png "Переменные")
 
  >   * что делает директива `ignoreboth` в bash?
 **Позволяет игнорировать и пробелы, и **
