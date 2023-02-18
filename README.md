@@ -41,7 +41,7 @@
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_11.png "Конфиг")
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_14.png "Ресурсы")
 
->4. Команда `vagrant ssh` из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
+>4. Команда `vagrant ssh` из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. >Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_12.png "Команды")
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_13.png "Команды")
@@ -49,7 +49,7 @@
 >5. Ознакомьтесь с разделами `man bash`, почитайте о настройках самого bash:
    * какой переменной можно задать длину журнала `history`, и на какой строчке manual это описывается?
 
-**У меня показал 846 строку, HISTFILESIZE, если я правильно поняла вопрос**
+**У меня показал 846 строку, HISTFILESIZE:**
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_16.png "Переменные")
 
