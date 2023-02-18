@@ -81,12 +81,9 @@ touch {1..100000}
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_20.png "экспрешнэкспрешн")
 
-**Конструкция должна выводить 1 или 0, видимо, но у меня почему-то ничего не выводит**
+**Конструкция, судя по описанию, должна выводить 1 или 0, если есть или нет такой директории, но у меня почему-то ничего не выводит**
 
-
-![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_19.png "экспрешнэкспрешн")
-
-**Нашла вот такую конструкцию**
+**Нашла вот такую конструкцию:**
 
 ![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_21.png "экспрешнэкспрешн")
 
@@ -105,6 +102,11 @@ touch {1..100000}
 
 	(прочие строки могут отличаться содержимым и порядком)
     В качестве ответа приведите команды, которые позволили вам добиться указанного вывода или соответствующие скриншоты.
+
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_23.png "path")
+
+![Скрин](https://github.com/Jlljully/devops_netology2/blob/main/Screenshot_24.png "path")
+
 
 10. Чем отличается планирование команд с помощью `batch` и `at`?
 
