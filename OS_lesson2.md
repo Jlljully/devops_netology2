@@ -8,16 +8,16 @@
     * удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.
 
 ### Ответ
+https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_10.png
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_2.png "1")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_2.png "1")
-
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_4%20(1).png "2")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_4.png "2")
 
 **Стоп-старт работают без проблем**
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_5.png "3")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_5.png "3")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_6.png "4")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_6.png "4")
 
 2. Изучите опции node_exporter и вывод `/metrics` по умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети.
 
@@ -44,7 +44,7 @@ node_scrape_collector_duration_seconds{collector="netstat"} 0.001132181**
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_7.png "5")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_7.png "5")
 
 4. Можно ли по выводу `dmesg` понять, осознаёт ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?
 
@@ -52,7 +52,7 @@ node_scrape_collector_duration_seconds{collector="netstat"} 0.001132181**
 
 **Да, можно:**
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_8.png "dmesg")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_8.png "dmesg")
 
 5. Как настроен sysctl `fs.nr_open` на системе по умолчанию? Определите, что означает этот параметр. Какой другой существующий лимит не позволит достичь такого числа (`ulimit --help`)?
 
@@ -60,11 +60,11 @@ node_scrape_collector_duration_seconds{collector="netstat"} 0.001132181**
 
 **Это - хардлимит на количество дескрипторов (запущенных файлов). Есть еще софтлимит, посмотреть его можно uname -n**
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_10.png "fs.nr_open")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_10.png "fs.nr_open")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_11.png "fs.nr_open")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_11.png "fs.nr_open")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_12.png "fs.nr_open")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_12.png "fs.nr_open")
 
 6. Запустите любой долгоживущий процесс (не `ls`, который отработает мгновенно, а, например, `sleep 1h`) в отдельном неймспейсе процессов; покажите, что ваш процесс работает под PID 1 через `nsenter`. Для простоты работайте в этом задании под root (`sudo -i`). Под обычным пользователем требуются дополнительные опции (`--map-root-user`) и т. д.
 
@@ -72,9 +72,9 @@ node_scrape_collector_duration_seconds{collector="netstat"} 0.001132181**
 
 **Запустила для примера просто /bin/bash и топ**
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_14.png "unshare")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_14.png "unshare")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_13.png "unshare")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_13.png "unshare")
 
 7. Найдите информацию о том, что такое `:(){ :|:& };:`. Запустите эту команду в своей виртуальной машине Vagrant с Ubuntu 20.04 (**это важно, поведение в других ОС не проверялось**). Некоторое время всё будет плохо, после чего (спустя минуты) — ОС должна стабилизироваться. Вызов `dmesg` расскажет, какой механизм помог автоматической стабилизации.  
 Как настроен этот механизм по умолчанию, и как изменить число процессов, которое можно создать в сессии?
@@ -84,9 +84,9 @@ node_scrape_collector_duration_seconds{collector="netstat"} 0.001132181**
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_17.png "unshare")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_17.png "unshare")
 
-![Скрин](https://github.com/Jlljully/OS_second/blob/main/Screenshot_19.png "unshare")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_19.png "unshare")
  
 **Оно так и не отработало. Сначала на машине, я подумала, было больно много ресурсов - уменьшила и запустила еще раз. Больше полутора часов я ждала, но решила ребутнуть ВМ и становить этот странный эксперимент. За это время нагулилось уже все что могло произойти: эта штука форкает бесконечно процессы, забивая ресурсы. В какой-то момент должно было наступить или исчерпание дескрипторов (тот самый софт лимит из пункта выше) или вступить oom-killer после исчерпания ресурсов памяти. Но если CPU у меня забился полностью, то память успешно сбрасывала лишнее в своп и ни о чем не беспокоилась  
 -_-**
