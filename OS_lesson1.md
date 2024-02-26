@@ -8,7 +8,7 @@
 
 ### Ответ
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_10.png "strace cd")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_10.png "strace cd")
 
 2. Попробуйте использовать команду `file` на объекты разных типов в файловой системе. Например:
 
@@ -27,7 +27,7 @@
 
 **Если смотреть на openat строки, то там постоянно появляется какой-то magic. И, как я поняла по man magic,  к его библиотекам и базе обращается не только file, но и type, и test. А может и нет - почитаю еще**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_11.png "strace file")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_11.png "strace file")
 
 3. Предположим, приложение пишет лог в текстовый файл. Этот файл оказался удалён (deleted в lsof), но сказать сигналом приложению переоткрыть файлы или просто перезапустить приложение возможности нет. Так как приложение продолжает писать в удалённый файл, место на диске постепенно заканчивается. Основываясь на знаниях о перенаправлении потоков, предложите способ обнуления открытого удалённого файла, чтобы освободить место на файловой системе.
 
@@ -35,7 +35,7 @@
 
 **Понимаю суть задания, но не понимаю как воспроизвести полноценно для скринов, чтоб писало что-то в файл. Сделала файлик с небольшим количеством строк просто чтоб был какой-то объем, открыла его в vi и отправила в фон ctrl-z. Удалила сам файл, остался висеть процесс и его swp. Отправила на pid процесса эхо с пустотой и он висит теперь явно без содержимого:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_14.png "to_delete")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_14.png "to_delete")
 
 4. Занимают ли зомби-процессы ресурсы в ОС (CPU, RAM, IO)?
 
@@ -56,15 +56,15 @@
 
 **В первую секунду работы утилиты он вывел несколько одинаковых сообщений такого типа:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_15.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_15.png "snoop")
 
 **А потом началась большая портянка из процессов:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_16.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_16.png "snoop")
 
 **С аргументом -d 1 он остановился вот тут:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_17.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_17.png "snoop")
 
 6. Какой системный вызов использует `uname -a`? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в `/proc` и где можно узнать версию ядра и релиз ОС.
 
@@ -72,19 +72,19 @@
 
 **-a  - это all, то есть все, кроме -p и -i:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_18.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_18.png "snoop")
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_22.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_22.png "snoop")
 
 **Совпадает! Только -m аргумент будто три раза в -а выводится** 
 
 **Он меня за полным маном почему-то отправил в интернеты. По ссылке вот такая информация:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_21.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_21.png "snoop")
 
 **Пришлось поискать. И далеко не все из описанного табается**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_233.png "snoop")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_233.png "snoop")
 
 7. Чем отличается последовательность команд через `;` и через `&&` в bash? Например:
 
@@ -124,7 +124,7 @@
 
 ### Ответ
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_24.png "stat")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_3/Screenshot_24.png "stat")
 
 >R    running or runnable (on run queue)  
 >S    interruptible sleep (waiting for an event to complete)  
