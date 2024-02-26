@@ -19,9 +19,9 @@ HOST: stackoverflow.com
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_2.png "telnet")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_2.png "telnet")
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_33.png "telnet")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_33.png "telnet")
 
 ```
 HTTP 403 Forbidden — стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен. Сервер понял запрос, но не выполнит его. Наиболее вероятными причинами ограничения может послужить попытка доступа к системным ресурсам веб-сервера (например, файлам .htaccess или .htpasswd) или к файлам, доступ к которым был закрыт с помощью конфигурационных файлов, требование аутентификации не средствами HTTP, например, для доступа к системе управления содержимым или разделу для зарегистрированных пользователей либо сервер не удовлетворён IP-адресом клиента, например, при блокировках. Появился в HTTP/1.0.
@@ -42,9 +42,9 @@ HTTP 403 Forbidden — стандартный код ответа HTTP, озна
 
 **Код 307 - редирект:**
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_4.png "F12")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_4.png "F12")
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_5.png "F12")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_5.png "F12")
 
 **Самый долгий запрос выполнялся 297мс, если его развернуть, то увидим, что это GET**
 
@@ -54,25 +54,25 @@ HTTP 403 Forbidden — стандартный код ответа HTTP, озна
 
 **Так как он статичный, не хочу показывать**
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_6.png "IP")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_6.png "IP")
 
 **Шаг 4.** Какому провайдеру принадлежит ваш IP-адрес? Какой автономной системе AS? Воспользуйтесь утилитой `whois`.
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_7.png "whois")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_7.png "whois")
 
 **Шаг 5.** Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой `traceroute`.
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_8.png "whois")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_8.png "whois")
 
 **Шаг 6.** Повторите задание 5 в утилите `mtr`. На каком участке наибольшая задержка — delay?
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_9.png "mtr")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_9.png "mtr")
 
 **Самая большая задержка на 7-9 хопах - уже у гугла, если посмотреть AS**
 
@@ -80,7 +80,7 @@ HTTP 403 Forbidden — стандартный код ответа HTTP, озна
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_10.png "dig")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_10.png "dig")
 
 **Шаг 8.** Проверьте PTR записи для IP-адресов из задания 7. Какое доменное имя привязано к IP? Воспользуйтесь утилитой `dig`.
 
@@ -88,4 +88,4 @@ HTTP 403 Forbidden — стандартный код ответа HTTP, озна
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/Net_1/blob/main/Screenshot_11.png "dig")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_11.png "dig")
