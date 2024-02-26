@@ -4,9 +4,9 @@
 
 ### Ответ
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_3.png "win")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_3.png "win")
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_4.png "lin")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_4.png "lin")
 
 **Или ip a**
 
@@ -16,7 +16,7 @@
 
 **Протокол LLDP**
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_5.png "")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_5.png "")
 
 3. Какая технология используется для разделения L2-коммутатора на несколько виртуальных сетей? Какой пакет и команды есть в Linux для этого? Приведите пример конфига.
 
@@ -24,7 +24,7 @@
 
 **VLAN, и пакет одноименный**
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_6.png "VLAN_conf")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_6.png "VLAN_conf")
 
 4. Какие типы агрегации интерфейсов есть в Linux? Какие опции есть для балансировки нагрузки? Приведите пример конфига.
 
@@ -32,7 +32,7 @@
 
 **LAG в linux называется bond (bonding), в windows - teaming. Балансировка может настраиваться по портам, по макам или по айпи:**
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_7.png "load_balance")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_7.png "load_balance")
 
 **Пример конфига без балансировки (с резервированием):**
 
@@ -71,7 +71,7 @@ iface bond0 inet static
 
 **Можно взять вот такую сеть, только с маской /26 :**
 
-![скрин](https://github.com/Jlljully/Net2/blob/main/Screenshot_9.png "net")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_7/Screenshot_9.png "net")
 
 7. Как проверить ARP-таблицу в Linux, Windows? Как очистить ARP-кеш полностью? Как из ARP-таблицы удалить только один нужный IP?
 
