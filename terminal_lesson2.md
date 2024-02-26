@@ -9,7 +9,7 @@
 
 **это buildin - встроенная в shell команда**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_1.png "cd")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_1.png "cd")
 
 **Я думаю, что это - команда первой необходимости (перемещение по каталогам), поэтому она встроена в оболочку**
 
@@ -29,14 +29,14 @@
 
 **Аргумент -с считает количество строк. Если нужно совпадение точное, а не просто содержащее выражение, то еще -w:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_2.png "grep")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_2.png "grep")
 
 
 3. Какой процесс с PID `1` является родителем для всех процессов в вашей виртуальной машине Ubuntu 20.04?
 
 ### Ответ
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_3.png "init")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_3.png "init")
 
 4. Как будет выглядеть команда, которая перенаправит вывод stderr `ls` на другую сессию терминала?
 
@@ -44,7 +44,7 @@
 
 **По-умолчанию, он перенаправляет поток 1, поэтому указываем 2 и придумываем как заставить ls вывести ошибку:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_4.png "ls")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_4.png "ls")
 
 **А второй строкой - если отправить без ошибок**
 
@@ -54,7 +54,7 @@
 
 **Какому-нибудь grep или cat можем отдать существующий файл и направить в новый:**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_5.png "in>out")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_5.png "in>out")
 
 6. Получится ли, находясь в графическом режиме, вывести данные из PTY в какой-либо из эмуляторов TTY? Сможете ли вы наблюдать выводимые данные?
 
@@ -68,7 +68,7 @@
 
 **Мы этой командой создали новый дескриптор 5, вывод которого перенаправили на 1, который по-умолчанию out - вывод на экран. Поэтому при направлении эха на 5 деспкриптор у нас он отправляется на 1, то есть выводится на экран:** 
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_6.png "5=1") 
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_6.png "5=1") 
 
 8. Получится ли в качестве входного потока для pipe использовать только stderr команды, не потеряв отображение stdout на pty?  
 Напоминаем: по умолчанию через pipe передаётся только stdout команды слева от `|` на stdin команды справа.
@@ -78,11 +78,11 @@
 
 **Это было сложно: перенаправить поток из 2 на 1 дескриптор 2>&1, и при этом получить одновремнено ошибку и результат. В итоге у меня 4 файла, в одном есть слово No, в других - нет, и задаю cat по диапозону 1-5 (5ого не существует, чтоб получить ошибку от cat):**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_7.png "err+out") 
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_7.png "err+out") 
 
 **Перечитала задание и поняла, что надо только err направить за пайп. Переделаем через лишний дескриптор (файлики сделала покороче - 1 со строчкой с No, чтоб проверить, что out не попадет за пайп, 2-4 просто с циферками, и 5 - не существует):**
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_8.png "err+out") 
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_8.png "err+out") 
 
 9. Что выведет команда `cat /proc/$$/environ`? Как ещё можно получить аналогичный по содержанию вывод?
 
@@ -116,7 +116,7 @@
 
 ### Ответ
 
-![скрин](https://github.com/Jlljully/devops_netology3/blob/main/Screenshot_9.jpg "tty")
+![скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_2/Screenshot_9.jpg "tty")
 
 >По умолчанию, когда вы запускаете ssh, для удаленного сеанса не выделяется TTY. Это позволяет вам передавать двоичные данные и т. д. без необходимости иметь дело с причудами TTY. Это среда, предназначенная для команды, выполняемой на компьютере.
 Уместно использовать ssh -t, когда вы в конечном итоге запускаете оболочку или другой интерактивный процесс в конце цепочки ssh. Если вы собираетесь передавать данные, добавлять -t нецелесообразно и необязательно, но тогда каждая команда ssh будет содержать команду создания или потребления данных
