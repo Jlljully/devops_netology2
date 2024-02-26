@@ -62,19 +62,19 @@
 
 **Сделала сначала extended, а с ним не работает дальше ничего, пришлось пересоздать 2-х гиговый тоже как primary (поэтому на  скрине видите такие предложенные сектора начала\конца девайса):**
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_11.png "1")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_11.png "1")
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_3.png "2")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_3.png "2")
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_4.png "3")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_4.png "3")
 
 5. Используя `sfdisk`, перенесите эту таблицу разделов на второй диск.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_5.png "4")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_5.png "4")
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_6.png "5")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_6.png "5")
 
 6. Соберите `mdadm` RAID1 на паре разделов 2 Гб.
 
@@ -82,55 +82,55 @@
 
 **Ой, ну я сначала сделала 7 пункт, потом 6, получается:**
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_7.png "5")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_7.png "5")
 
 7. Соберите `mdadm` RAID0 на второй паре маленьких разделов.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_8.png "6")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_8.png "6")
 
 8. Создайте два независимых PV на получившихся md-устройствах.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_9.png "7")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_9.png "7")
 
 9. Создайте общую volume-group на этих двух PV.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_10.png "8")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_10.png "8")
 
 10. Создайте LV размером 100 Мб, указав его расположение на PV с RAID0.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_12.png "9")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_12.png "9")
 
 11. Создайте `mkfs.ext4` ФС на получившемся LV.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_13.png "10")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_13.png "10")
 
 12. Смонтируйте этот раздел в любую директорию, например, `/tmp/new`.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_14.png "11")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_14.png "11")
 
 13. Поместите туда тестовый файл, например, `wget https://mirror.yandex.ru/ubuntu/ls-lR.gz -O /tmp/new/test.gz`.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_15.png "12")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_15.png "12")
 
 14. Прикрепите вывод `lsblk`.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_16.png "13")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_16.png "13")
 
 15. Протестируйте целостность файла:
 
@@ -142,25 +142,25 @@
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_17.png "14")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_17.png "14")
 
 16. Используя pvmove, переместите содержимое PV с RAID0 на RAID1.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_18.png "15")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_18.png "15")
 
 17. Сделайте `--fail` на устройство в вашем RAID1 md.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_19.png "16")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_19.png "16")
 
 18. Подтвердите выводом `dmesg`, что RAID1 работает в деградированном состоянии.
 
 ### Ответ 
 
-![Скрин](https://github.com/Jlljully/File_systems/blob/main/Screenshot_20.png "17")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_5/Screenshot_20.png "17")
 
 19. Протестируйте целостность файла — он должен быть доступен несмотря на «сбойный» диск:
 
