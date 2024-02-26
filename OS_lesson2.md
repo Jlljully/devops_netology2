@@ -8,7 +8,7 @@
     * удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.
 
 ### Ответ
-https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_10.png
+
 ![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_2.png "1")
 
 ![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_4/Screenshot_4.png "2")
