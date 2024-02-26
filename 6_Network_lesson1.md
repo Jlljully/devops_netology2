@@ -21,7 +21,7 @@ HOST: stackoverflow.com
 
 ![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_2.png "telnet")
 
-![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_33.png "telnet")
+![Скрин](https://github.com/Jlljully/terminal-OS-net-security/blob/main/files/lesson_6/Screenshot_3.png "telnet")
 
 ```
 HTTP 403 Forbidden — стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен. Сервер понял запрос, но не выполнит его. Наиболее вероятными причинами ограничения может послужить попытка доступа к системным ресурсам веб-сервера (например, файлам .htaccess или .htpasswd) или к файлам, доступ к которым был закрыт с помощью конфигурационных файлов, требование аутентификации не средствами HTTP, например, для доступа к системе управления содержимым или разделу для зарегистрированных пользователей либо сервер не удовлетворён IP-адресом клиента, например, при блокировках. Появился в HTTP/1.0.
